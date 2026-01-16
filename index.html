@@ -19,16 +19,16 @@
     </header>
 
     <main id="main-content" class="max-w-4xl mx-auto px-5 py-10">
-        <section aria-labelledby="signup-heading" class="bg-white shadow-sm rounded-xl p-10">
+        <section aria-labelledby="signup-heading" class="bg-white shadow-sm rounded-xl p-5 lg:p-10">
             <h2 id="signup-heading" class="text-2xl font-semibold mb-6">Signup Form</h2>
 
-            <form id="signupForm" novalidate class="space-y-10">
-                <fieldset class="border border-gray-200 rounded-xl p-5">
-                    <legend class="px-5 text-xl font-medium text-gray-700">Personal Information</legend>
+            <form id="signupForm" novalidate class="space-y-8 sm:space-y-10">
+                <fieldset class="border border-gray-200 rounded-xl p-3 sm:p-5">
+                    <legend class="px-3 sm:px-5 text-lg sm:text-xl font-medium text-gray-700">Personal Information</legend>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                        <div class="col-span-2">
-                            <label for="fullName" class="block text-lg font-medium text-gray-700">
+                    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-5">
+                        <div class="col-span-1 sm:col-span-2">
+                            <label for="fullName" class="block text-base sm:text-lg font-medium text-gray-700">
                                 <i class="fa-solid fa-user text-gray-400 mr-2"></i>
                                 Full Name<span aria-hidden="true" class="text-red-500"> *</span>
                             </label>
@@ -39,13 +39,13 @@
                                 required
                                 aria-required="true"
                                 aria-describedby="name-help"
-                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
+                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-2 sm:px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
                             />
-                            <small id="name-help" class="text-gray-500">Enter your first and last name.</small>
+                            <small id="name-help" class="text-xs sm:text-sm text-gray-500">Enter your first and last name.</small>
                         </div>
-                        
+
                         <div>
-                            <label for="email" class="block text-lg font-medium text-gray-700">
+                            <label for="email" class="block text-base sm:text-lg font-medium text-gray-700">
                                 <i class="fa-solid fa-envelope text-gray-400 mr-2"></i>
                                 Email Address<span aria-hidden="true" class="text-red-500"> *</span>
                             </label>
@@ -56,13 +56,13 @@
                                 required
                                 aria-required="true"
                                 aria-describedby="email-help"
-                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
+                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-2 sm:px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
                             />
-                            <small id="email-help" class="text-gray-500">We will never share your email.</small>
+                            <small id="email-help" class="text-xs sm:text-sm text-gray-500">We will never share your email.</small>
                         </div>
 
                         <div>
-                            <label for="phone" class="block text-lg font-medium text-gray-700">
+                            <label for="phone" class="block text-base sm:text-lg font-medium text-gray-700">
                                 <i class="fa-solid fa-phone text-gray-400 mr-2"></i>
                                 Phone Number
                             </label>
@@ -71,13 +71,13 @@
                                 id="phone"
                                 name="phone"
                                 aria-describedby="phone-help"
-                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
+                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-2 sm:px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
                             />
-                            <small id="phone-help" class="text-gray-500">Include country code if applicable.</small>
+                            <small id="phone-help" class="text-xs sm:text-sm text-gray-500">Include country code if applicable.</small>
                         </div>
 
                         <div>
-                            <label for="dob" class="block text-lg font-medium text-gray-700">
+                            <label for="dob" class="block text-base sm:text-lg font-medium text-gray-700">
                                 <i class="fa-solid fa-calendar-days text-gray-400 mr-2"></i>
                                 Date of Birth
                             </label>
@@ -85,12 +85,12 @@
                                 type="date"
                                 id="dob"
                                 name="dob"
-                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
+                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-2 sm:px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
                             />
                         </div>
 
                         <div>
-                            <label for="age" class="block text-lg font-medium text-gray-700">
+                            <label for="age" class="block text-base sm:text-lg font-medium text-gray-700">
                                 <i class="fa-solid fa-hashtag text-gray-400 mr-2"></i>
                                 Age
                             </label>
@@ -100,13 +100,14 @@
                                 name="age"
                                 min="0"
                                 aria-describedby="age-help"
-                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
+                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-2 sm:px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
                             />
-                            <small id="age-help" class="text-gray-500">Enter your age in years.</small>
+                            <small id="age-help" class="text-xs sm:text-sm text-gray-500">Enter your age in years.</small>
                         </div>
 
-                        <div class="lg:col-span-2">
-                            <label for="address" class="block text-lg font-medium text-gray-700">
+                        <!-- Address -->
+                        <div class="sm:col-span-2">
+                            <label for="address" class="block text-base sm:text-lg font-medium text-gray-700">
                                 <i class="fa-solid fa-location-dot text-gray-400 mr-2"></i>
                                 Address
                             </label>
@@ -115,19 +116,19 @@
                                 name="address"
                                 rows="3"
                                 aria-describedby="address-help"
-                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
+                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-2 sm:px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
                             ></textarea>
-                            <small id="address-help" class="text-gray-500">Street, city, and country.</small>
+                            <small id="address-help" class="text-xs sm:text-sm text-gray-500">Street, city, and country.</small>
                         </div>
                     </div>
                 </fieldset>
 
-                <fieldset class="border border-gray-200 rounded-md p-4">
-                    <legend class="px-2 text-sm font-medium text-gray-700">Emergency Contact</legend>
+                <fieldset class="border border-gray-200 rounded-md p-3 sm:p-4">
+                    <legend class="px-2 sm:px-3 text-sm sm:text-base font-medium text-gray-700">Emergency Contact</legend>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
                         <div>
-                            <label for="emergencyName" class="block text-lg font-medium text-gray-700">
+                            <label for="emergencyName" class="block text-base sm:text-lg font-medium text-gray-700">
                                 <i class="fa-solid fa-user-shield text-gray-400 mr-2"></i>
                                 Emergency Contact Name
                             </label>
@@ -135,12 +136,12 @@
                                 type="text"
                                 id="emergencyName"
                                 name="emergencyName"
-                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
+                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-2 sm:px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
                             />
                         </div>
 
                         <div>
-                            <label for="emergencyPhone" class="block text-lg font-medium text-gray-700">
+                            <label for="emergencyPhone" class="block text-base sm:text-lg font-medium text-gray-700">
                                 <i class="fa-solid fa-phone-volume text-gray-400 mr-2"></i>
                                 Emergency Contact Phone
                             </label>
@@ -148,22 +149,24 @@
                                 type="tel"
                                 id="emergencyPhone"
                                 name="emergencyPhone"
-                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
+                                class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 px-2 sm:px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-blue-50 focus:outline-none transition-colors duration-200"
                             />
                         </div>
                     </div>
                 </fieldset>
 
+                <!-- Submit Button -->
                 <div>
                     <button
                         type="submit"
-                        class="block mx-auto rounded-md bg-green-600 px-10 py-3 text-lg font-medium text-white shadow-sm hover:bg-green-400 focus:outline-none transition-colors duration-200"
+                        class="block mx-auto rounded-md bg-green-600 px-8 sm:px-10 py-3 text-base sm:text-lg font-medium text-white shadow-sm hover:bg-green-400 focus:outline-none transition-colors duration-200"
                     >
                         <i class="fa-solid fa-paper-plane mr-2"></i>
                         Submit
                     </button>
                 </div>
             </form>
+
         </section>
     </main>
 
